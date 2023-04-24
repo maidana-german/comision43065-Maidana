@@ -5,13 +5,13 @@ alert(mensajeBienvenida);
 let continuar = prompt("Desea comenzar ?")
 precioTotal = 0;
 i = 0;
-while (continuar != "no"){
+while (continuar != "no") {
 
-function precio(precioSinIva, iva){
-    precioFinal = precioSinIva + iva;
-    mensaje = `El precio final del producto: ${producto}, es de ARS ${precioFinal}`
-    alert(mensaje);
-}
+    function precio(precioSinIva, iva) {
+        precioFinal = precioSinIva + iva;
+        mensaje = `El precio final del producto: ${producto}, es de ARS ${precioFinal}`
+        alert(mensaje);
+    }
 
     producto = prompt("Ingrese el producto");
     valor1 = parseInt(prompt("Ingrese precion sin IVA"));
@@ -19,14 +19,10 @@ function precio(precioSinIva, iva){
     i = i + 1;
     precio(valor1, valor2);
 
+    continuar = prompt("Desea continuar?");
 
-continuar = prompt("Desdea continuar?");
-
-
-precioTotal = precioTotal + precioFinal;
-
+    precioTotal = precioTotal + precioFinal;
 
 }
 alert(`El total de la compra, ${i} productos, es de ARS ${precioTotal}`);
-
 
