@@ -2,7 +2,7 @@ let mensajeBienvenida = "Bienvenido a la app de facturación";
 alert(mensajeBienvenida);
 
 
-let continuar = prompt("Desea continuar ?")
+let continuar = prompt("Desea comenzar ?")
 precioTotal = 0;
 i = 0;
 while (continuar != "no"){
